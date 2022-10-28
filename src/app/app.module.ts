@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeentryComponent } from './employeeentry/employeeentry.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import {HttpClientModule} from '@angular/common/http'
 
 const appRoutes:Routes=[
   {
@@ -15,19 +16,24 @@ const appRoutes:Routes=[
   },
   {
     path:"empentry",component:EmployeeentryComponent
+  },
+  {
+    path:"nav",component:NavbarComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EmployeeentryComponent
+    EmployeeentryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
