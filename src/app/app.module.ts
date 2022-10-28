@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeentryComponent } from './employeeentry/employeeentry.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { TestingComponent } from './testing/testing.component'
 
 const appRoutes:Routes=[
   {
@@ -19,6 +21,12 @@ const appRoutes:Routes=[
   },
   {
     path:"nav",component:NavbarComponent
+  },
+  {
+    path:"searchemp",component:SearchEmployeeComponent
+  },
+  {
+    path:"testing",component:TestingComponent
   }
 ]
 @NgModule({
@@ -26,7 +34,9 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     EmployeeentryComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchEmployeeComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
