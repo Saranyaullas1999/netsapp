@@ -1,1 +1,44 @@
-<p>employeeentry works!</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">EmployeeCode</label>
+                    <input type="text" class="form-control" name="emp_code" [(ngModel)]="emp_code">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Designation</label>
+                    <input type="text" class="form-control" name="designation" [(ngModel)]="designation">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Date Of Joining</label>
+                    <input type="datetime-local" name="join_date" id="" class="form-control" [(ngModel)]="join_date">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Place</label>
+                    <input type="text" class="form-control" name="place" [(ngModel)]="place">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Phone Number</label>
+                    <input type="text" class="form-control" name="phoneno" [(ngModel)]="phoneno">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" class="form-control" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
