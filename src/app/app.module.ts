@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { TestingComponent } from './testing/testing.component'
 
+
 const appRoutes:Routes=[
   {
     path:"",component:LoginComponent
@@ -28,6 +29,7 @@ const appRoutes:Routes=[
   {
     path:"testing",component:TestingComponent
   }
+
 ]
 @NgModule({
   declarations: [

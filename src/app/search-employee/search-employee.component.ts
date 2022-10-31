@@ -9,17 +9,26 @@ import { ApiService } from '../api.service';
 export class SearchEmployeeComponent implements OnInit {
 
   constructor(private myapi:ApiService) { }
-name=""
-emp_code=""
+  inputValue:any=""
+data={}
 readValue=()=>{
-  let data={
-    "name":this.name,
-    "emp_code":this.emp_code
+  if (isNaN(this.inputValue)) {
+    this.data={
+      "name" : this.inputValue,
+      "emp_code":0
+    }
+  } else {
+   this.data={
+    "name" : this.inputValue,
+    "emp_code":this.inputValue
+   } 
   }
-  console.log(data)
-  this.myapi.searchEmployee(data).subscribe(
+
+  console.log(this.data)
+  this.myapi.searchEmployee(this.data).subscribe(
     (res)=>{
       this.dataD=res
+      console.log(res)
     }
   )
   
