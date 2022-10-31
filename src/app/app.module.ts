@@ -13,7 +13,8 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { TestingComponent } from './testing/testing.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { EmppageComponent } from './emppage/emppage.component';
-import { EmploginComponent } from './emplogin/emplogin.component'
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component'
 
 
 const appRoutes:Routes=[
@@ -40,6 +41,9 @@ const appRoutes:Routes=[
   },
   {
     path:"employee",component:EmploginComponent
+  },
+  {
+    path:"emp-nav",component:EmpNavbarComponent
   }
 
 ]
@@ -53,7 +57,8 @@ const appRoutes:Routes=[
     TestingComponent,
     ViewemployeeComponent,
     EmppageComponent,
-    EmploginComponent
+    EmploginComponent,
+    EmpNavbarComponent
   ],
   imports: [
     BrowserModule,
