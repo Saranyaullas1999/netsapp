@@ -33,6 +33,14 @@ readValue=()=>{
   )
   
 }
+
+updateValue=()=>{
+ this.myapi.editEmployee(this.dataD[0]).subscribe(
+  res=>{
+    alert("Successfully Updated")
+  }
+ )
+}
 dataD:any=[]
   ngOnInit(): void {
   }

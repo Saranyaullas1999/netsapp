@@ -11,38 +11,41 @@
                     <button class="btn btn-success" (click)="readValue()">Search</button>
                 </div>
                 <div>
-                    <div *ngFor="let i of dataD" class="row">
+                    <div *ngFor="let i of dataD" class="row g-3">
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Employee Name</label>
-                            <input type="text" class="form-control" value="{{i.name}}">
+                            <input type="text" class="form-control" value="{{i.name}}" [(ngModel)]="i.name">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Employee Code</label>
-                            <input type="text" class="form-control" value="{{i.emp_code}}">
+                            <input type="text" class="form-control" value="{{i.emp_code}}" [(ngModel)]="i.emp_code">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Designation</label>
-                            <input type="text" class="form-control" value="{{i.designation}}">
+                            <input type="text" class="form-control" value="{{i.designation}}" [(ngModel)]="i.designation">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Date Of Join</label>
-                            <input type="text" class="form-control" value="{{i.join_date}}">
+                            <input type="text" class="form-control" value="{{i.join_date}}" [(ngModel)]="i.join_date">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Place</label>
-                            <input type="text" class="form-control" value="{{i.place}}">
+                            <input type="text" class="form-control" value="{{i.place}}" [(ngModel)]="i.place">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Phone Number</label>
-                            <input type="text" class="form-control" value="{{i.phoneno}}">
+                            <input type="text" class="form-control" value="{{i.phoneno}}" [(ngModel)]="i.phoneno">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" value="{{i.email}}">
+                            <input type="text" class="form-control" value="{{i.email}}" [(ngModel)]="i.email">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Password</label>
-                            <input type="text" class="form-control" value="{{i.password}}">
+                            <input type="text" class="form-control" value="{{i.password}}" [(ngModel)]="i.password">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <button class="btn btn-success" (click)="updateValue()">Update</button>
                         </div>
                     </div>
                 </div>
