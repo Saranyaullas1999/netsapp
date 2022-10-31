@@ -24,8 +24,8 @@ export class EmploginComponent implements OnInit {
       (res:any)=>{
         if (res.length>0) {
           localStorage.setItem("name",res[0].name),
-          localStorage.setItem("id",res[0].id)
-          this.myrouter.navigate(["/emppage"])
+          localStorage.setItem("id",res[0].emp_code)
+          this.myrouter.navigate(["/emp-nav"])
         } else {
           alert("Invalid Credentials")
         }
