@@ -1,2 +1,33 @@
+<app-emp-navbar></app-emp-navbar>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of empData" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           <h1> Welcome {{name}}</h1>
 
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Name :</strong>{{i.name}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Employee Code :</strong>{{i.emp_code}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Designation :</strong>{{i.designation}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Date Of Joining :</strong>{{i.join_date}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Place :</strong>{{i.place}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Phone Number :</strong>{{i.phoneno}}</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2><strong>Email :</strong>{{i.email}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 

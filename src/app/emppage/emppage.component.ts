@@ -8,10 +8,25 @@ import { ApiService } from '../api.service';
 })
 export class EmppageComponent implements OnInit {
 
-  constructor() { 
+  constructor(private myapi:ApiService) { 
+this.fetchData()
+  }
+  name=localStorage.getItem("name")
+  emp_code=localStorage.getItem("id")
 
+  fetchData=()=>{
+    let data={
+      "name":this.name,
+      "emp_code":this.emp_code
+    }
+    this.myapi.searchEmployee(data).subscribe(
+      (res)=>{
+        this.empData=res
+      }
+    )
   }
 
+  empData:any=[]
   ngOnInit(): void {
   }
 
