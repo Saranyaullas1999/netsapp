@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Employee Code</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Date Of Joining</th>
+                    <th scope="col">Place</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of empData">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.emp_code}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.join_date}}</td>
+                    <td>{{i.place}}</td>
+                    <td>{{i.phoneno}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.password}}</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

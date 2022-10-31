@@ -10,7 +10,8 @@ import { EmployeeentryComponent } from './employeeentry/employeeentry.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
-import { TestingComponent } from './testing/testing.component'
+import { TestingComponent } from './testing/testing.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component'
 
 
 const appRoutes:Routes=[
@@ -28,6 +29,9 @@ const appRoutes:Routes=[
   },
   {
     path:"testing",component:TestingComponent
+  },
+  {
+    path:"viewemp",component:ViewemployeeComponent
   }
 
 ]
@@ -38,7 +42,8 @@ const appRoutes:Routes=[
     EmployeeentryComponent,
     NavbarComponent,
     SearchEmployeeComponent,
-    TestingComponent
+    TestingComponent,
+    ViewemployeeComponent
   ],
   imports: [
     BrowserModule,
