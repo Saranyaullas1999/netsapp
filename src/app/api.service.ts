@@ -50,4 +50,8 @@ export class ApiService {
   editSecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/editsec",data)
   }
+
+  deleteSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/deletesec",data)
+  }
 }

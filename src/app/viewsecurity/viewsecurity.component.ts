@@ -19,6 +19,17 @@ export class ViewsecurityComponent implements OnInit {
       }
     )
     }
+    deleteValue=(id:any)=>{
+      let data={
+        "id":id
+      }
+      this.myapi.deleteSecurity(data).subscribe(
+        (res)=>{
+          alert("Deleted")
+        }
+      )
+      this.fetchData()
+    }
 
     secData:any=[]
   ngOnInit(): void {
