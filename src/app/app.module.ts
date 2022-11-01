@@ -16,7 +16,8 @@ import { EmppageComponent } from './emppage/emppage.component';
 import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
-import { AddsecurityComponent } from './addsecurity/addsecurity.component'
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component'
 
 
 const appRoutes:Routes=[
@@ -52,7 +53,11 @@ const appRoutes:Routes=[
   },
   {
     path:"addsec",component:AddsecurityComponent
-  }
+},
+{
+  path:"viewsec",component:ViewsecurityComponent
+}
+
 
 ]
 @NgModule({
@@ -68,7 +73,8 @@ const appRoutes:Routes=[
     EmploginComponent,
     EmpNavbarComponent,
     ApplyleaveComponent,
-    AddsecurityComponent
+    AddsecurityComponent,
+    ViewsecurityComponent
   ],
   imports: [
     BrowserModule,
