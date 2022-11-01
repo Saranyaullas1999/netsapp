@@ -30,4 +30,8 @@ export class ApiService {
   empLogin=(data:any)=>{
     return this.http.post("http://localhost:8080/login",data)
   }
+
+  applyLeave=(data:any)=>{
+    return this.http.post("http://localhost:8080/addleave",data)
+  }
 }

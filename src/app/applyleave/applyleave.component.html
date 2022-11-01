@@ -1,0 +1,39 @@
+<app-emp-navbar></app-emp-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+              
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Leave Type:</label>
+                    <select name="type" id="" class="form-control" [(ngModel)]="type" >
+                        <option value="General Leave">General Leave</option>
+                        <option value="Medical Leave">Medical Leave</option>
+                        <option value="Loss Of Pay">Loss Of Pay</option>
+                        <option value="Duty Leave">Duty Leave</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Apply Date :</label>
+                    <input type="datetime-local" name="apply_date" id="" class="form-control" [(ngModel)]="apply_date">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Leave Date :</label>
+                    <input type="date" name="date" id="" class="form-control" [(ngModel)]="date">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Duration :</label>
+                    <input type="text" class="form-control" name="duration" [(ngModel)]="duration">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Reason :</label>
+                    <textarea name="reason" id="" cols="30" rows="10" class="form-control" [(ngModel)]="reason"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Apply</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
