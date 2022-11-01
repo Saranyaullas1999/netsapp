@@ -18,7 +18,9 @@ import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
-import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component'
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { SecuritypageComponent } from './securitypage/securitypage.component'
 
 
 const appRoutes:Routes=[
@@ -60,6 +62,12 @@ const appRoutes:Routes=[
 },
 {
   path:"searchsec",component:SearchsecurityComponent
+},
+{
+  path:"security",component:SecurityloginComponent
+},
+{
+  path:"secpage",component:SecuritypageComponent
 }
 
 
@@ -79,7 +87,9 @@ const appRoutes:Routes=[
     ApplyleaveComponent,
     AddsecurityComponent,
     ViewsecurityComponent,
-    SearchsecurityComponent
+    SearchsecurityComponent,
+    SecurityloginComponent,
+    SecuritypageComponent
   ],
   imports: [
     BrowserModule,
