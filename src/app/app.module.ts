@@ -17,7 +17,8 @@ import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
 import { ApplyleaveComponent } from './applyleave/applyleave.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
-import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component'
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component'
 
 
 const appRoutes:Routes=[
@@ -56,6 +57,9 @@ const appRoutes:Routes=[
 },
 {
   path:"viewsec",component:ViewsecurityComponent
+},
+{
+  path:"searchsec",component:SearchsecurityComponent
 }
 
 
@@ -74,7 +78,8 @@ const appRoutes:Routes=[
     EmpNavbarComponent,
     ApplyleaveComponent,
     AddsecurityComponent,
-    ViewsecurityComponent
+    ViewsecurityComponent,
+    SearchsecurityComponent
   ],
   imports: [
     BrowserModule,

@@ -42,4 +42,8 @@ export class ApiService {
   viewSecurity=()=>{
     return this.http.get("http://localhost:8080/viewsec")
   }
+
+  searchSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchsec",data)
+  }
 }
