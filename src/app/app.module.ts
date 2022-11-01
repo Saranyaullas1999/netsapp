@@ -14,7 +14,8 @@ import { TestingComponent } from './testing/testing.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { EmppageComponent } from './emppage/emppage.component';
 import { EmploginComponent } from './emplogin/emplogin.component';
-import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component'
+import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
+import { ApplyleaveComponent } from './applyleave/applyleave.component'
 
 
 const appRoutes:Routes=[
@@ -44,6 +45,9 @@ const appRoutes:Routes=[
   },
   {
     path:"emp-nav",component:EmpNavbarComponent
+  },
+  {
+    path:"applylev",component:ApplyleaveComponent
   }
 
 ]
@@ -58,7 +62,8 @@ const appRoutes:Routes=[
     ViewemployeeComponent,
     EmppageComponent,
     EmploginComponent,
-    EmpNavbarComponent
+    EmpNavbarComponent,
+    ApplyleaveComponent
   ],
   imports: [
     BrowserModule,
