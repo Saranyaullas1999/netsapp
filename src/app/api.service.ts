@@ -38,4 +38,8 @@ export class ApiService {
   addSecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/addsec",data)
   }
+
+  viewSecurity=()=>{
+    return this.http.get("http://localhost:8080/viewsec")
+  }
 }

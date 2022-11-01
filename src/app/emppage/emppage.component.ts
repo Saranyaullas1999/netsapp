@@ -12,7 +12,7 @@ export class EmppageComponent implements OnInit {
 this.fetchData()
   }
   name=localStorage.getItem("name")
-  emp_code=localStorage.getItem("id")
+  emp_code=localStorage.getItem("emp_code")
 
   fetchData=()=>{
     let data={
