@@ -54,4 +54,8 @@ export class ApiService {
   deleteSecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/deletesec",data)
   }
+
+  securityLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/loginsec",data)
+  }
 }
