@@ -46,4 +46,8 @@ export class ApiService {
   searchSecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/searchsec",data)
   }
+
+  editSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/editsec",data)
+  }
 }

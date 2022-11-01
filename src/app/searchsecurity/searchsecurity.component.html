@@ -14,27 +14,30 @@
                     <div *ngFor="let i of dataD" class="row g-3">
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Name :</label>
-                            <input type="text" class="form-control" value="{{i.name}}">
+                            <input type="text" class="form-control" value="{{i.name}}" [(ngModel)]="i.name">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Security Code :</label>
-                            <input type="text" class="form-control" value="{{i.sec_code}}">
+                            <input type="text" class="form-control" value="{{i.sec_code}}" [(ngModel)]="i.sec_code">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Password :</label>
-                            <input type="text" class="form-control" value="{{i.password}}">
+                            <input type="text" class="form-control" value="{{i.password}}" [(ngModel)]="i.password">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Place :</label>
-                            <input type="text" class="form-control" value="{{i.place}}">
+                            <input type="text" class="form-control" value="{{i.place}}" [(ngModel)]="i.place">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Phone Number :</label>
-                            <input type="text" class="form-control" value="{{i.phone}}">
+                            <input type="text" class="form-control" value="{{i.phone}}" [(ngModel)]="i.phone">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="">Date Of Joining :</label>
-                            <input type="text" class="form-control" value="{{i.doj}}">
+                            <input type="text" class="form-control" value="{{i.doj}}" [(ngModel)]="i.doj">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                           <button class="btn btn-success" (click)="updateValue()">Update</button>
                         </div>
                     </div>
                 </div>

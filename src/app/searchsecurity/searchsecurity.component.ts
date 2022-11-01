@@ -33,6 +33,14 @@ export class SearchsecurityComponent implements OnInit {
       }
     )
   }
+
+  updateValue=()=>{
+    this.myapi.editSecurity(this.dataD[0]).subscribe(
+      (res)=>{
+        alert("Successfully updated")
+      }
+    )
+  }
 dataD:any=[]
   ngOnInit(): void {
   }
