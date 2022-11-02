@@ -20,7 +20,8 @@ import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
-import { SecuritypageComponent } from './securitypage/securitypage.component'
+import { SecuritypageComponent } from './securitypage/securitypage.component';
+import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component'
 
 
 const appRoutes:Routes=[
@@ -68,6 +69,9 @@ const appRoutes:Routes=[
 },
 {
   path:"secpage",component:SecuritypageComponent
+},
+{
+  path:"viewleaveemp",component:ViewemployeeleaveComponent
 }
 
 
@@ -89,7 +93,8 @@ const appRoutes:Routes=[
     ViewsecurityComponent,
     SearchsecurityComponent,
     SecurityloginComponent,
-    SecuritypageComponent
+    SecuritypageComponent,
+    ViewemployeeleaveComponent
   ],
   imports: [
     BrowserModule,
