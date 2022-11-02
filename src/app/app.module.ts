@@ -21,7 +21,8 @@ import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { SecuritypageComponent } from './securitypage/securitypage.component';
-import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component'
+import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component';
+import { ViewallleaveComponent } from './viewallleave/viewallleave.component'
 
 
 const appRoutes:Routes=[
@@ -72,6 +73,9 @@ const appRoutes:Routes=[
 },
 {
   path:"viewleaveemp",component:ViewemployeeleaveComponent
+},
+{
+  path:"viewallleave",component:ViewallleaveComponent
 }
 
 
@@ -94,7 +98,8 @@ const appRoutes:Routes=[
     SearchsecurityComponent,
     SecurityloginComponent,
     SecuritypageComponent,
-    ViewemployeeleaveComponent
+    ViewemployeeleaveComponent,
+    ViewallleaveComponent
   ],
   imports: [
     BrowserModule,
