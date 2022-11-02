@@ -62,4 +62,12 @@ export class ApiService {
   viewLeaveEmp=(data:any)=>{
     return this.http.post("http://localhost:8080/view",data)
   }
+
+  viewLeaveAllEmp=()=>{
+    return this.http.get("http://localhost:8080/viewall")
+  }
+
+  viewStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewstatus",data)
+  }
 }
