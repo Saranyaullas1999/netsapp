@@ -22,7 +22,8 @@ import { SearchsecurityComponent } from './searchsecurity/searchsecurity.compone
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { SecuritypageComponent } from './securitypage/securitypage.component';
 import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component';
-import { ViewallleaveComponent } from './viewallleave/viewallleave.component'
+import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
+import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component'
 
 
 const appRoutes:Routes=[
@@ -76,6 +77,9 @@ const appRoutes:Routes=[
 },
 {
   path:"viewallleave",component:ViewallleaveComponent
+},
+{
+  path:"sec-nav",component:SecuritynavbarComponent
 }
 
 
@@ -99,7 +103,8 @@ const appRoutes:Routes=[
     SecurityloginComponent,
     SecuritypageComponent,
     ViewemployeeleaveComponent,
-    ViewallleaveComponent
+    ViewallleaveComponent,
+    SecuritynavbarComponent
   ],
   imports: [
     BrowserModule,
