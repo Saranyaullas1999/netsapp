@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 export class ApplyleaveComponent implements OnInit {
 
   constructor(private myapi:ApiService) { }
-  emp_id=localStorage.getItem("empid")
+  emp_id=localStorage.getItem("id")
   type=""
   apply_date=""
   date=""
@@ -18,7 +18,7 @@ export class ApplyleaveComponent implements OnInit {
 
   readValue=()=>{
     let data={
-      "emp_id":localStorage.getItem("empid"),
+      "emp_id":localStorage.getItem("id"),
       "type":this.type,
       "apply_date":this.apply_date,
       "date":this.date,
