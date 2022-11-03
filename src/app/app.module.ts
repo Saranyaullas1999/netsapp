@@ -23,7 +23,8 @@ import { SecurityloginComponent } from './securitylogin/securitylogin.component'
 import { SecuritypageComponent } from './securitypage/securitypage.component';
 import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component';
 import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
-import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component'
+import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
+import { CheckinComponent } from './checkin/checkin.component'
 
 
 const appRoutes:Routes=[
@@ -80,6 +81,9 @@ const appRoutes:Routes=[
 },
 {
   path:"sec-nav",component:SecuritynavbarComponent
+},
+{
+  path:"checkin",component:CheckinComponent
 }
 
 
@@ -104,7 +108,8 @@ const appRoutes:Routes=[
     SecuritypageComponent,
     ViewemployeeleaveComponent,
     ViewallleaveComponent,
-    SecuritynavbarComponent
+    SecuritynavbarComponent,
+    CheckinComponent
   ],
   imports: [
     BrowserModule,

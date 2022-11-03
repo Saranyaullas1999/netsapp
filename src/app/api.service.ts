@@ -70,4 +70,8 @@ export class ApiService {
   viewStatus=(data:any)=>{
     return this.http.post("http://localhost:8080/viewstatus",data)
   }
+
+  addCheckin=(data:any)=>{
+    return this.http.post("http://localhost:8080/checkin",data)
+  }
 }
