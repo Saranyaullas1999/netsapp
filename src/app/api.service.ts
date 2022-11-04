@@ -86,4 +86,8 @@ export class ApiService {
   viewallLog=()=>{
     return this.http.get("http://localhost:8080/viewlogdetails")
   }
+
+  viewLogById=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewlogbyid",data)
+  }
 }
