@@ -25,7 +25,8 @@ import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleav
 import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
 import { CheckinComponent } from './checkin/checkin.component';
-import { CheckoutComponent } from './checkout/checkout.component'
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ViewalllogComponent } from './viewalllog/viewalllog.component'
 
 
 const appRoutes:Routes=[
@@ -88,6 +89,9 @@ const appRoutes:Routes=[
 },
 {
   path:"checkout",component:CheckoutComponent
+},
+{
+  path:"viewalllog",component:ViewalllogComponent
 }
 
 
@@ -114,7 +118,8 @@ const appRoutes:Routes=[
     ViewallleaveComponent,
     SecuritynavbarComponent,
     CheckinComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ViewalllogComponent
   ],
   imports: [
     BrowserModule,
