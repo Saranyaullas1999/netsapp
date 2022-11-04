@@ -24,7 +24,8 @@ import { SecuritypageComponent } from './securitypage/securitypage.component';
 import { ViewemployeeleaveComponent } from './viewemployeeleave/viewemployeeleave.component';
 import { ViewallleaveComponent } from './viewallleave/viewallleave.component';
 import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
-import { CheckinComponent } from './checkin/checkin.component'
+import { CheckinComponent } from './checkin/checkin.component';
+import { CheckoutComponent } from './checkout/checkout.component'
 
 
 const appRoutes:Routes=[
@@ -84,6 +85,9 @@ const appRoutes:Routes=[
 },
 {
   path:"checkin",component:CheckinComponent
+},
+{
+  path:"checkout",component:CheckoutComponent
 }
 
 
@@ -109,7 +113,8 @@ const appRoutes:Routes=[
     ViewemployeeleaveComponent,
     ViewallleaveComponent,
     SecuritynavbarComponent,
-    CheckinComponent
+    CheckinComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
