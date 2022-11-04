@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SecuritypageComponent implements OnInit {
 
   constructor() { }
+  name=localStorage.getItem("name")
+
+
 
   ngOnInit(): void {
   }
